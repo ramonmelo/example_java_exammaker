@@ -1,0 +1,17 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+	version="1.0">
+	<persistence-unit name="connect">
+		<provider>oracle.toplink.essentials.PersistenceProvider</provider>
+		<exclude-unlisted-classes>false</exclude-unlisted-classes>
+		<properties>
+			<property name="toplink.ddl-generation" value="create-tables" />
+			<property name="toplink.logging.level" value="FINE" />
+			<property name="toplink.jdbc.url" value="jdbc:sqlite:scritus" />
+			<property name="toplink.jdbc.driver" value="org.sqlite.JDBC" />
+			<property name="toplink.jdbc.user" value="exam" />
+			<property name="toplink.jdbc.password" value="exam" />
+		</properties>
+	</persistence-unit>
+</persistence>
